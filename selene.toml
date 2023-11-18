@@ -1,0 +1,7 @@
+std = "roblox"
+
+[lints]
+unused_variable = "allow" # I'm fine with unused variables in code
+empty_if = "allow"
+shadowing = "allow"
+global_usage = "allow"
