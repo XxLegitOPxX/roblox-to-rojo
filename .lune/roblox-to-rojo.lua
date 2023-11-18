@@ -1,4 +1,4 @@
--- roblox-to-rojo.luau
+-- roblox-to-rojo.lua
 -- XxLegitOPxX
 -- Created @ 12/10/2023
 
