@@ -1,4 +1,6 @@
 /sourcemap.json
+/src
+/*.project.json
 /*.bat
 
 # Roblox Studio files
