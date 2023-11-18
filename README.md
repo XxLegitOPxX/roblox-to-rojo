@@ -1,12 +1,12 @@
 # roblox-to-rojo
 A Lune script that attempts to convert a Roblox .rbxl(x) place file to Rojo-style format (for *fully*-managed projects).
 
-Please note I only made this for personal use, so it may be quite buggy and incomplete, however I bet it can do at least 80% of the work for you.
+Please note I only made this for **personal use**, so it may be quite buggy and incomplete, however I bet it can do at least 80% of the work for you.
 You'll have to fork this repository yourself if you want to add any changes since I won't be actively maintaining it.
 
 This tool is different from https://github.com/rojo-rbx/rbxlx-to-rojo in
 that it supports a fully-managed rojo workflow as opposed to only
-partially-managed. This tool isn't perfect but I think it does the job pretty well.
+partially-managed. Again, this tool isn't perfect but I think it does the job pretty well.
 
 Best results occur when all your game scripts are stored in one of these
 containers: Directly under a Service, Folders, Models, Configurations.
@@ -44,7 +44,7 @@ README.md
 - Creates a new project.json file that specifies the properties
     and sub-services (like StarterPlayer/StarterPlayerScripts) of all
     services defined in CONTAINERS
-- Only saves properties that aren't already set to a default value.
+- Only saves properties that aren't already set to a default value (most of the time).
 - You can force specific instances to be saved as a model file in case
     the conversion process goes bad for those specific instances. You can
     provide either an instance name or an exact path in FORCE_SAVE_AS_MODEL:
