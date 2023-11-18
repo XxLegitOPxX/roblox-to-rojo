@@ -1,0 +1,10 @@
+/sourcemap.json
+/*.bat
+
+# Roblox Studio files
+**/*.rbxlx
+/*.rbxl
+
+# Roblox Studio lock files
+**/*.rbxlx.lock
+/*.rbxl.lock
