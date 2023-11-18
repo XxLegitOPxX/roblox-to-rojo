@@ -21,9 +21,9 @@ README.md
 1. Install aftman and both selene + stylua VS Code extensions.
 2. Clone the repository and run `aftman install`
 3. Place a .rbxl(x) place file inside the repo folder.
-4. If your place file is named "game.rbxl" you can skip this step, otherwise rename the place file or go to `.lune/roblox-to-rojo.luau` and modify the `PLACE_FILE_PATH` constant to match your place file name.
-5. Modify the settings inside `.lune/roblox-to-rojo.luau` as you desire.
-6. Run `lune roblox-to-rojo.luau`
+4. If your place file is named "game.rbxl" you can skip this step, otherwise rename the place file or go to `.lune/roblox-to-rojo.lua` and modify the `PLACE_FILE_PATH` constant to match your place file name.
+5. Modify the settings inside `.lune/roblox-to-rojo.lua` as you desire.
+6. Run `lune roblox-to-rojo.lua`
 
 # How the conversion process works
 - If the instance is a Script AND has no children -> save as script (.lua)
