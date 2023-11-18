@@ -42,7 +42,14 @@ local CONTAINERS = {
 	ServerStorage = 2,
 	StarterGui = 2,
 	StarterPack = 2,
-	StarterPlayer = 2,
+	--[[
+		This one causes some weird errors:
+		- An error occured while checking property "DevCameraOcclusionMode" value for class "StarterPlayer": runtime error: The enum 'CharacterControlMode' does not exist
+		- An error occured while checking property "CameraMinZoomDistance" value for class "StarterPlayer": runtime error: The enum 'CharacterControlMode' does not exist
+		- An error occured while checking property "UserEmotesEnabled" value for class "StarterPlayer": runtime error: The enum 'CharacterControlMode' does not exist
+		So I temporarily commented it out it until lune/roblox changes their reflection db/api dump OR I find a solution...
+	]]
+	--StarterPlayer = 2,
 	Teams = 2,
 	SoundService = 2,
 	TextChatService = 2,
@@ -103,6 +110,7 @@ local PROPERTIES_BLACKLIST = {
 	"PrimaryPart", -- Ref
 	"SoundGroup", -- Ref
 	"EnableFluidForces", -- Beta feature
+	"LuaCharacterController", -- Beta feature (?)
 
 	-- We only want Gui-based rotation
 	"BasePart.Rotation",
