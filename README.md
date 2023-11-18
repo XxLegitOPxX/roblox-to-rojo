@@ -39,8 +39,8 @@ README.md
     everything such as the required folders, scripts, model/meta.jsons, rbxms
     etc. as outlined in https://rojo.space/docs/v7/sync-details/
 - (WIP) Preserves scripts/local scripts Disabled property using meta.jsons
-- Preserves instance AND service-specific attributes.
-- Preserves instance AND service-specific tags.
+- Preserves instance AND service-specific (WIP) attributes.
+- Preserves instance AND service-specific (WIP) tags.
 - Creates a new project.json file that specifies the properties
     and sub-services (like StarterPlayer/StarterPlayerScripts) of all
     services defined in CONTAINERS
