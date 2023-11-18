@@ -1,13 +1,12 @@
 # roblox-to-rojo
 A Lune script that attempts to convert a Roblox .rbxl(x) place file to Rojo-style format (for *fully*-managed projects).
 
-Please note I only made this for personal use, so it may be quite buggy and incomplete, however I believe it can do at least 80% of the work for you.
+Please note I only made this for personal use, so it may be quite buggy and incomplete, however I bet it can do at least 80% of the work for you.
 You'll have to fork this repository yourself if you want to add any changes since I won't be actively maintaining it.
 
 This tool is different from https://github.com/rojo-rbx/rbxlx-to-rojo in
 that it supports a fully-managed rojo workflow as opposed to only
-partially-managed like rbxlx-to-rojo does. This tool isn't perfect
-but I think it does the job pretty well.
+partially-managed. This tool isn't perfect but I think it does the job pretty well.
 
 Best results occur when all your game scripts are stored in one of these
 containers: Directly under a Service, Folders, Models, Configurations.
@@ -26,14 +25,14 @@ README.md
 5. Modify the settings inside `.lune/roblox-to-rojo.luau` as you desire.
 6. Run `lune roblox-to-rojo.luau`
 
-# How the conversion process works:
+# How the conversion process works
 - If the instance is a Script AND has no children -> save as script (.lua)
 - If the instance is a Script AND has children / Not a script AND contains
     scripts (descendants) -> save as folder (either init*.lua or meta.json)
 - If the instance is not a script AND doesn't contain any scripts
     (descendants) -> save as model (.rbxm)
 
-# Current features:
+# Current features
 - You can specify which services to save if you don't want to do a full
     conversion.
 - Recursively loops through the place's services and automatically creates
@@ -49,14 +48,14 @@ README.md
 - You can force specific instances to be saved as a model file in case
     the conversion process goes bad for those specific instances. You can
     provide either an instance name or an exact path in FORCE_SAVE_AS_MODEL:
-    - Name = "Vehicles"
-    - Path = "Workspace.Vehicles"
+    - `Name = "Vehicles"`
+    - `Path = "Workspace.Vehicles"`
 
 
-# Potential future features:
+# Potential future features
 * Automatic wally package linking in project.json
 
-# Caveats:
+# Caveats
 - Instance names with any of the following characters will get replaced by
     an underscore (_): \ / : * ? "< > |
     This is a restriction of Windows.
@@ -67,4 +66,4 @@ README.md
     are a child of the instance).
 - Does not preserve PackageLinks (they are deleted when converting atm.)
 - CFrame attributes aren't supported by rojo yet, so they are automatically
-    converted into strings in rojoifyValue
+    converted into strings in `rojoifyValue`
