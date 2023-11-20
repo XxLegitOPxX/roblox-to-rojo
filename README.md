@@ -2,7 +2,7 @@
 A Lune script that attempts to convert a Roblox .rbxl(x) place file to Rojo-style format (for *fully*-managed projects).
 
 Please note I only made this for **personal use**, so it may be quite buggy and incomplete, however I bet it can do at least 80% of the work for you.
-You'll have to fork this repository yourself if you want to add any changes since I won't be actively maintaining it.
+I won't be actively maintaining this repository.
 
 This tool is different from https://github.com/rojo-rbx/rbxlx-to-rojo in
 that it supports a fully-managed rojo workflow as opposed to only
