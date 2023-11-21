@@ -1,5 +1,6 @@
 -- roblox-to-rojo.lua
 -- XxLegitOPxX
+-- Version: 0.2.0
 -- Created @ 12/10/2023
 
 --[[
@@ -720,6 +721,11 @@ local function saveAsFolder(parent, instance)
 	end
 end
 
+local function saveAsEmptyFolder(parent, instance)
+	local savePath = getInstanceSavePath(parent, instance)
+	fs.writeDir(savePath)
+end
+
 local function checkForceSaveAsModel(instance)
 	local path = getInstancePath(instance, ".")
 	for searchType, str in pairs(FORCE_SAVE_AS_MODEL) do
@@ -747,6 +753,8 @@ local function saveInstance(parent, instance)
 	then
 		-- Script AND has children / Not a script AND contains scripts (descendants)
 		saveAsFolder(parent, instance)
+	elseif instance:IsA("Folder") and #instance:GetChildren() == 0 then
+		saveAsEmptyFolder(parent, instance)
 	elseif
 		not instance:IsA("LuaSourceContainer") and not instance:FindFirstChildWhichIsA("LuaSourceContainer", true)
 	then
