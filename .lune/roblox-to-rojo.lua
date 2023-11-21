@@ -1,6 +1,6 @@
 -- roblox-to-rojo.lua
 -- XxLegitOPxX
--- Version: 0.2.0
+-- Version: 0.2.1
 -- Created @ 12/10/2023
 
 -- Modules
