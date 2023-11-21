@@ -1,0 +1,10 @@
+- [ ] Scripts that have children should also be possible to disable
+- [ ] NPCHostility HostilityChance attribute didn't get saved? (this happened when converting one of my games, it's an attribute belonging to a script under ServerScriptService)
+- [ ] Helper script that solves missing properties
+- [ ] Missing properties to account for in the helper script:
+    - [ ] MaterialService.Use2022Materials
+    - [ ] BasePart.MaterialVariant
+    - [ ] TriangleMeshPart.CollisionFidelity
+    - [ ] ScreenGui.IgnoreGuiInset
+    - [ ] TextLabel.Font
+- [ ] Support for more types (all in rojo sync details preferably)

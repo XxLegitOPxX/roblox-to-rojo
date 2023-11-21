@@ -3,20 +3,6 @@
 -- Version: 0.2.0
 -- Created @ 12/10/2023
 
---[[
-	TODO:
-	- Helper script that solves missing properties
-	- Scripts that have children should also be possible to disable
-	- NPCHostility HostilityChance attribute didn't get saved?
-	- Missing properties to account for in the helper script:
-	  - MaterialService.Use2022Materials
-	  - BasePart.MaterialVariant
-	  - TriangleMeshPart.CollisionFidelity
-	  - ScreenGui.IgnoreGuiInset
-	  - TextLabel.Font
-	- Support for more types (all in rojo sync details preferably)
-]]
-
 -- Modules
 local fs = (require)("@lune/fs")
 local roblox = (require)("@lune/roblox")
